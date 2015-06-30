@@ -29,5 +29,5 @@ class WeekStat {
       }
     }
   }
-}
+} //end class WeekStat
 

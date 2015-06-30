@@ -51,14 +51,6 @@ void setup() {
     allRepos.add(ps);
   }
 
-  //  JSONArray empire = loadJSONArray("empire.json");
-  //
-  //  for (int i = 0; i < empire.size (); i++) {
-  //    JSONObject week = empire.getJSONObject(i);
-  //    WeekStat w = new WeekStat(week);
-  //
-  //    empireActivity.add(w);
-  //  }
 }
 
 void draw() {
@@ -66,21 +58,6 @@ void draw() {
   for (ProjectStat proj : allRepos) {
     proj.drawGithubActivity();
   }
-
-  //  for (int j = 0; j < empireActivity.size (); j++) {
-  //    WeekStat w = empireActivity.get(j);
-  //    println(w.days);
-  //    int[] dayArray = w.days.getIntArray();
-  //    for (int x = 0; x < 7; x++) {
-  //      if (dayArray[x] > 0) {
-  //        fill(255);
-  //      } else {
-  //        stroke(255);
-  //        noFill();
-  //      }
-  //      ellipse(xMargin + x*horzSpacer, yMargin + j * vertSpacer, 4, 4);
-  //    }
-  //  }
 
   endRecord();
 }
